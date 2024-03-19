@@ -48,7 +48,7 @@ conn.commit()
 
 
 # React to user input
-prompt = st.text_input("Write down your question here:")
+prompt = st.text_input("Write down your question about Columbiat here:")
 
 # Display user message in chat message container
 if st.button("Send"):
