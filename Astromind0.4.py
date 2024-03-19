@@ -31,7 +31,7 @@ st.title("Astro_Mind🌌")
 
 ######## Title and introduction #######
 
-st.write("An AI Assistant for every ARSSDC questions!")
+st.write("An AI for every ARSSDC questions!")
 
 ###### Text Uploader #######
 
