@@ -55,8 +55,6 @@ prompt = st.text_input("Write down your question about Columbiat here:", placeho
 # Display user message in chat message container
 if st.button("Send"):
     st.divider()
-    with st.status("Generating answer......"):
-               time.sleep(5)
     with st.container():
         st.title("Question:")
         st.text(prompt)
@@ -71,6 +69,8 @@ if st.button("Send"):
     # Process the user prompt and get the response
     answer = query({"in-0": prompt})
     response = answer.get('out-2', '')
+    with st.spinner('Wait for it...'):
+               time.sleep(3)
 
     # Display the response in the chat message container
     with st.container():
