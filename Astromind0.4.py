@@ -53,7 +53,7 @@ prompt = st.text_input("Write down your question here:")
 # Display user message in chat message container
 if st.button("Send"):
     with st.container():
-        st.title(f"Question: {prompt}")
+        # st.title("Question: {prompt}")
        
 
     # Add user message to the database
