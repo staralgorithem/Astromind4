@@ -46,7 +46,7 @@ cursor.execute("""
 """)
 conn.commit()
 
-
+st.divider()
 # React to user input
 prompt = st.text_input("Write down your question about Columbiat here:")
 
