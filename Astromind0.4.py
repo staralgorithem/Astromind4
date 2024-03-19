@@ -52,6 +52,7 @@ prompt = st.text_input("Write down your question about Columbiat here:")
 
 # Display user message in chat message container
 if st.button("Send"):
+    st.divider()
     with st.container():
         st.title("Question:")
         st.text(prompt)
