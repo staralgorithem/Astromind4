@@ -55,9 +55,8 @@ prompt = st.text_input("Write down your question about Columbiat here:", placeho
 # Display user message in chat message container
 if st.button("Send"):
     st.divider()
-    with st.status("Please Wait..."):
-               st.write("Generate answer...")
-               time.sleep(2)
+    with st.status("Generating answer......"):
+               time.sleep(5)
     with st.container():
         st.title("Question:")
         st.text(prompt)
