@@ -50,7 +50,7 @@ conn.commit()
 
 st.divider()
 # React to user input
-prompt = st.text_input("Write down your question about Columbiat here:", placeholder="Prompt")
+prompt = st.text_input("Write down your question about Columbiat here:",  max_chars=800, placeholder="Prompt")
 
 # Display user message in chat message container
 if st.button("Send"):
