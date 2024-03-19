@@ -31,7 +31,7 @@ st.title("Astro_Mind🌌")
 
 ######## Title and introduction #######
 
-st.write("An AI Assistant for every questions of the ARSSDC!")
+st.write("An AI Assistant for every ARSSDC questions!")
 
 ###### Text Uploader #######
 
@@ -46,16 +46,15 @@ cursor.execute("""
 """)
 conn.commit()
 
-# ... (Your API setup and definitions)
 
 # React to user input
-prompt = st.text_input("Write down your prompt here:")
+prompt = st.text_input("Write down your question here:")
 
 # Display user message in chat message container
 if st.button("Send"):
     with st.container():
-        st.title("Question:")
-        st.write(prompt)
+        st.title(f"Question: {prompt}")
+       
 
     # Add user message to the database
     cursor.execute(
