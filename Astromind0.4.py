@@ -31,7 +31,7 @@ st.title("Astro_Mind🌌")
 
 ######## Title and introduction #######
 
-st.write("An AI for every ARSSDC questions!")
+st.caption("An AI for every ARSSDC questions!")
 
 ###### Text Uploader #######
 
@@ -48,7 +48,7 @@ conn.commit()
 
 st.divider()
 # React to user input
-prompt = st.text_input("Write down your question about Columbiat here:")
+prompt = st.text_input("Write down your question about Columbiat here:", placeholder="Prompt")
 
 # Display user message in chat message container
 if st.button("Send"):
